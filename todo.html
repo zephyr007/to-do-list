@@ -3,6 +3,8 @@
     <head>
         <link href="style.css" rel="stylesheet" type="text/css">
         <title>Todo list</title>
+    
+   
     </head>
     <body>
       <div class="d1">
@@ -17,7 +19,9 @@
       <pre id="demo">
           
       </pre>
+          
 
+           
             <script>
         function myFunction() {
           var x, text;
@@ -26,11 +30,12 @@
           x = document.getElementById("numb").value;
           k = document.getElementById("demo").innerHTML;
           z=x+k;
+          m=" <br> "+z;
 
     
-        document.getElementById("demo").innerHTML = z;
-          }
-</script>
+          document.getElementById("demo").innerHTML = m;
+           }
+         </script>
 
            
             
