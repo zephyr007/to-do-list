@@ -26,9 +26,10 @@
           x = document.getElementById("numb").value;
           k = document.getElementById("demo").innerHTML;
           z=x+k;
+          m=" <br> "+z;
 
     
-        document.getElementById("demo").innerHTML = z;
+        document.getElementById("demo").innerHTML = m;
           }
 </script>
 
