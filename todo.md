@@ -10,6 +10,7 @@
        
         <div class="container">
           <input id="numb">
+          
 
          <button type="button" onclick="myFunction()">Submit</button>
          <h2>Tasks </h2>
@@ -17,6 +18,7 @@
       <pre id="demo">
           
       </pre>
+            
 
             <script>
         function myFunction() {
@@ -26,10 +28,11 @@
           x = document.getElementById("numb").value;
           k = document.getElementById("demo").innerHTML;
           z=x+k;
-          m=" <br> "+z;
+          m="<input type="+"checkbox"+"> "+ z ;
+            p=" <br> "+m;
 
     
-        document.getElementById("demo").innerHTML = m;
+        document.getElementById("demo").innerHTML = p;
           }
 </script>
 
