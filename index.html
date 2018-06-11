@@ -1,0 +1,109 @@
+<DOCTYPE HTML>
+<html>
+    <head>
+        <link href="style.css" rel="stylesheet" type="text/css"><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+       <script> 
+        $(document).ready(function(){
+         $("#hide").click(function(){
+         $("p").hide();
+             });
+           $("#show").click(function(){
+           $("p").show();
+    });
+});
+</script>
+
+        
+        <title>Todo list</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+
+    </head>
+    <body>
+      <div class="d1">
+       <h1 style=" color: white;">Todo list</h1>
+       
+        <div class="container" style="display: inline-flex; padding-bottom: 5px;">
+          <input id="input" placeholder="add text here">
+          <button id="bt0" type="button" onclick="add();">Add task</button>
+          
+          </div>
+        </div>
+          
+
+         <div id="d2">
+            <h2>Tasks </h2>
+            <ul id="list">
+                
+            </ul>
+            <style>
+                .close:hover{
+                    cursor: pointer;
+                    
+                }
+                .checkbox:hover{
+                    cursor: pointer;
+                    
+                }
+             </style>
+            <script>
+                var list=[];
+                
+
+  function add() {
+  var li = document.createElement("li");
+  var checkbox =document.createElement("input")
+  checkbox.type="checkbox";
+  checkbox.class="";
+  
+  var inputValue = document.getElementById("input").value;
+  var t = document.createTextNode(inputValue);
+  li.appendChild(checkbox);
+  li.appendChild(t);
+  if (inputValue === '') {
+    alert("You must write something!");
+  } else {
+    document.getElementById("list").appendChild(li);
+  }
+  document.getElementById("input").value = "";
+
+ var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+      
+  span.className = "close";
+  span.appendChild(txt);
+  li.appendChild(span);
+var close=document.getElementsByClassName("close");
+      var i;
+      
+
+ for (i = 0; i < close.length; i++) {
+    close[i].onclick = function() {
+      var div = this.parentElement;
+      div.style.display = "none";
+    }
+  }
+}
+                
+            </script>
+
+      
+
+           
+            
+               
+            
+        
+        
+    </body>
+</html>
+    
