@@ -5,10 +5,22 @@
 }
 .d1
 {
+    background-color: coral;
+    text-align: center;
+    padding: 5px 10px 5px 10px;
     
-    margin-left: 30%;
 }
-.p
+.container #numb
 {
-    
+    width: 75%;
+}
+.container #bt0{
+    width: 25%;
+    text-align: center;
+}
+.container #bt0:hover{
+    background-color: chartreuse;
+}
+#d2{
+    text-align: center;
 }
